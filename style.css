@@ -1,0 +1,235 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --backgrond: #000;
+  --text-color: #FFF;
+  --button: #8257E5;
+  --border: #29292E;
+  --border-menu-mobile: #A8A8B3;
+  --text-color-menu-mobile: #E1E1E6;
+}
+
+body {
+  background-color: var(--backgrond);
+  font-family: 'Manrope', sans-serif;
+  display: flex;
+  color: var(--text-color);
+  flex-direction: column;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+
+.nav-desktop > a {
+  color: var(--text-color);
+  text-decoration: none;
+  margin-left: 32px;
+}
+
+#nav-mobile {
+  display: none;
+  flex-direction: column;
+}
+
+#nav-mobile  > a{
+  text-decoration: none;
+  width: 100%;
+  color: var(--text-color-menu-mobile);
+  padding: 14px 0 14px 30px;
+  border-bottom: 1px solid #29292E;
+}
+
+#nav-mobile  > a:active{
+  border-left: 5px solid var(--button);
+  font-weight: bold;
+
+}
+
+.button-header, .button-mobile {
+  color: var(--text-color);
+  font-weight: bold;
+  background: transparent;
+  padding: 10px 38px;
+  border-radius: 6px;
+  border:solid 1px var(--button)
+}
+
+.button-toggle {
+  display: none;
+  width: 24px;
+  height: 8px;
+  padding: 2px;
+  background-color: var(--backgrond);
+  border: none;
+}
+ 
+.blur-1{
+  right: 0;
+  position: fixed;
+  z-index: -1;
+}
+
+.blur-2{
+  position: fixed;
+  bottom: 0;
+  z-index: -1;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.container-title {
+  margin-top: 40px;
+}
+
+h1, h2 {
+  font-size: 80px;
+}
+
+h2 {
+  color: var(--backgrond);
+  opacity: 0.7;
+  text-shadow: -1px -1px 0 var(--button), 1px -1px 0 var(--button), -1px 1px 0 var(--button), 1px 1px 0 var(--button);
+}
+
+.blur-mobile{
+  display: none;
+}
+
+.button-mobile-menu , #open{
+  display: none;
+}
+
+.button-mobile-menu-close, #close {
+  display: none;
+}
+
+.button-mobile {
+  display: none;
+}
+
+.logo-mobile {
+  display: none;
+}
+
+.title-mobile {
+  display: none;
+}
+
+
+@media screen and (max-width: 600px) {
+  body {
+    background-image: url(./assets/blur-mobile.png);
+    background-position: bottom;
+    background-repeat: no-repeat;
+  }
+  .nav-desktop{
+    display: none;
+  }
+
+  span {
+    color: #29292E;
+    border-bottom: 1px solid #29292E;
+    width: 100vh;
+    margin-top: 25px;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    margin:  37px 25px 0 15px;
+  }
+
+  .container-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 88px 39px 20px 40px;
+  }
+
+  .rocket-coffee{
+    width: 428px;
+    height: 333px;
+  }
+
+  h1, h2 {
+    font-size: 40px;
+  }
+
+  .blur-1 {
+    display: none;
+  }
+
+  .blur-2{
+    display: none;
+  }
+
+  .blur-mobile {
+    display: block;
+    position: fixed;
+    bottom: 0;
+    z-index: -1;
+    
+  }
+
+  .button-header {
+    display: none;
+  }
+  
+  .button-toggle {
+    display: block;
+  }
+
+
+  .logo {
+    display: none;
+  }
+
+  
+.button-mobile-menu, #open {
+  display: block;
+}
+
+.button-mobile-menu-close, #close {
+  display: none;
+}
+
+.button-mobile {
+  display: block;
+  margin-top: 88px;
+}
+
+.logo-mobile {
+  display: block;
+}
+
+.title-mobile {
+  display: block;
+  text-align: center;
+  font-size: 30px;
+  margin-top: 88px;
+}
+}
+
+
+
+.troywell-caa {
+  display: none;
+  bottom: 0;
+}
+
+.troywell-avia{
+  display: none;
+}
