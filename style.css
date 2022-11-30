@@ -128,7 +128,7 @@ h2 {
 }
 
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 750px) {
   body {
     background-image: url(./assets/blur-mobile.png);
     background-position: bottom;
